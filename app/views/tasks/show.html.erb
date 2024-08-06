@@ -1,0 +1,7 @@
+<h1>show</h1>
+
+<%= @task.title%> - <%= @task.details %> <%= @task.completed %>
+<%= link_to "Delete",
+  task_path(@task),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
